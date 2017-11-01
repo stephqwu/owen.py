@@ -9,7 +9,7 @@ class Map(object):
         result = ""
         for row in self.map:
             for entry in row:
-                result += "%s, " % ((entry.name + 11*" ")[0:11] if entry else 11*" ")
+                result += "%s| " % ((entry.name + 11*" ")[0:11] if entry else 11*" ")
             result += "\n"
         return result
 
